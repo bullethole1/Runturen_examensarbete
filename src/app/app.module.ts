@@ -11,6 +11,8 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps';
 import { RuneStoneInfoPage } from '../pages/rune-stone-info/rune-stone-info';
+import { StorePage } from '../pages/store/store';
+
 
 import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -26,7 +28,8 @@ import { FlickrProvider } from '../providers/flickr/flickr';
     HomePage,
     TabsPage,
     GoogleMapsPage,
-    RuneStoneInfoPage
+    RuneStoneInfoPage,
+    StorePage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { FlickrProvider } from '../providers/flickr/flickr';
     HomePage,
     TabsPage,
     GoogleMapsPage,
-    RuneStoneInfoPage
+    RuneStoneInfoPage,
+    StorePage
   ],
   providers: [
     StatusBar,

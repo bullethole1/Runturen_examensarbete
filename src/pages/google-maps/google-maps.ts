@@ -36,11 +36,11 @@ export class GoogleMapsPage {
                 "https://c1.staticflickr.com/5/4500/37759580412_ceba6bd2d2_k.jpg",
                 "https://c1.staticflickr.com/5/4500/37791296701_4e1e8d7c10_k.jpg"
             ]],                      
-            ['Norastenen (sö30)', 58.9661111, 17.541111111111114, "(hela texten känd efter äldre illustration): Ingemar och Arne läto resa denna sten och göra bro efter Stenkel sin son. Gud hjälpe hans ande.",[
+            ['Norastenen (sö30)', 58.9661111, 17.541111111111114, "(Hela texten känd efter äldre illustration): Ingemar och Arne läto resa denna sten och göra bro efter Stenkel sin son. Gud hjälpe hans ande.",[
                 "https://c1.staticflickr.com/5/4494/37791292541_020cb7ca36_k.jpg",
                 "https://c1.staticflickr.com/5/4473/37791293171_492f736616_k.jpg"
             ]],                               
-            ['Tjuvstigen (sö34)', 58.9777778, 17.54527777777778, "Ingegärd lät resa anuu en sten efter sina söner synliga minnesmärken. Gud hjälpe deras ande. Torer högg. Styrlög och Holm stenar reste efter sina bröder närmast vägen. De ändades i österväg. Torkel och Styrbjörn goda kämpar.",[
+            ['Tjuvstigen (sö34)', 58.9777778, 17.54527777777778, "Ingegärd lät resa ännu en sten efter sina söner synliga minnesmärken. Gud hjälpe deras ande. Torer högg. Styrlög och Holm stenar reste efter sina bröder närmast vägen. De ändades i österväg. Torkel och Styrbjörn goda kämpar.",[
                 "https://c1.staticflickr.com/5/4466/37121267813_8aab1a0405_k.jpg",
                 "https://c1.staticflickr.com/5/4498/37121271613_cb368b2ee1_k.jpg"
             ]],                        
