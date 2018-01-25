@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the StorePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PayPage } from '../pay/pay';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class StorePage {
 
+  pushPage: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pushPage = PayPage;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StorePage');
   }
+
 
 }

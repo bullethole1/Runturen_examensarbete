@@ -5,6 +5,7 @@ import { HomePage } from '../home/home';
 import { GoogleMapsPage } from '../google-maps/google-maps';
 import { GalleryPage } from '../gallery/gallery';
 import { StorePage } from '../store/store';
+import { PayPage } from '../pay/pay';
 
 
 @Component({
@@ -18,6 +19,8 @@ export class TabsPage {
   tab4Root = GoogleMapsPage;
   tab5Root = GalleryPage;
   tab6Root = StorePage;
+  tab7Root = PayPage;
+
 
 
   constructor() {
