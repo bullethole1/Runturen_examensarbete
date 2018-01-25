@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { AboutPage } from '../about/about';
 import { GalleryPage } from '../gallery/gallery';
 import { GoogleMapsPage } from '../google-maps/google-maps';
+import { StorePage } from '../store/store';
 
 @Component({
   selector: 'page-home',
@@ -28,6 +29,9 @@ export class HomePage {
     });
     $(".mapRef").click(function(){
       classRef.navCtrl.push(GoogleMapsPage); 
+    });
+    $(".storeRef").click(function(){
+      classRef.navCtrl.push(StorePage); 
     });
   }
 

@@ -88,97 +88,6 @@ export class GoogleMapsPage {
             ]]
           ];
 
-        // var i;
-        // var locationens: any = [['Erikslund Gillberga (sö42)', 58.9161111, 17.450833333333332,"Här är texten10", [
-        //     "https://c1.staticflickr.com/5/4486/37759581212_2f7e410d6b_k.jpg",
-        //     "https://c1.staticflickr.com/5/4501/37759581452_193ebc175d_k.jpg",
-        //     "https://c1.staticflickr.com/5/4471/37791300561_25991e65c0_k.jpg",
-        //     "https://c1.staticflickr.com/5/4490/37791301061_dcb3d337f8_k.jpg",
-        //     "https://c1.staticflickr.com/5/4454/37791300931_b7ca920d2c_k.jpg"
-        // ]],
-        // ['Ytterstene', 58.9161111, 17.549463699999933,"Här är texten11", [
-        //     "https://c1.staticflickr.com/5/4492/37121261153_198456e8cc_k.jpg", 
-        //     "https://c1.staticflickr.com/5/4474/37533080240_0b5922e5b2_k.jpg"
-        // ]]];
-        
-        // var location = new google.maps.LatLng(58.9219444, 17.448888888888888);
-        // var options = {
-        //     center: location,
-        //     zoom: 10,
-        // }
-        // var map = new google.maps.Map(this.mapRef.nativeElement, options);
-
-        // for(var i = 0; i<locationens.length; i++)
-        // {
-        //     var location = new google.maps.LatLng(locationens[i][1], locationens[i][2]);
-        //     // var marker = this.addMarker(location, map);
-        //     var textRef = "KUUUUUK";
-        //     let infowindow = new google.maps.InfoWindow({
-        //         content: "<img src='" + locationens[i][4][0] + "' id='runeImg1'>"
-        //     });
-        //     google.maps.event.addListener(this.addMarker(location, map), 'click', () => {
-        //         infowindow.open(this.map, this.addMarker(location, map));
-        //         // var el = document.getElementById('runeImg1');
-        //         // var classRef = this;
-        //         // el.addEventListener('click', function(){
-        //             //classRef.navCtrl.push(RuneStoneInfoPage, references); 
-        //             // alert("kuk");
-        //         // });
-        //     });
-        // }
-        // var i;
-        // const location = new google.maps.LatLng(58.9219444, 17.448888888888888);
-
-        // const options = {
-        // center: location,
-        // zoom: 11,
-        // }
-
-        // const map = new google.maps.Map(this.mapRef.nativeElement, options);
-
-        // for(i = 0; i<locations.length; i++)
-        // {
-        //     const location = new google.maps.LatLng(locations[i][1], locations[i][2]);
- 
-        //     //var marker = this.addMarker(location, map);
-            
-            
-        //     var tempVar = <any>locations[i][4];
-        //     var contentString: any = [];
-
-        //     for(var x = 0; x < tempVar.length; x++)
-        //     {
-        //         contentString.push(locations[i][4][x]);
-        //     }
-            
-        //     var textRef = locations[i][3];
-    
-        //     console.log(contentString[0]);
-        //     var infowindow = new google.maps.InfoWindow({
-        //       content: "<img src='" + contentString[0] + "' class='runeImg'>"
-        //     });
-        
-        //     var references = {
-        //     img : contentString,
-        //     text : textRef
-        //     }
-    
-        //     google.maps.event.addListener(this.addMarker(location, map), 'click', () => {
-        //         infowindow.open(this.map, this.addMarker(location, map));
-        //         var el = document.getElementsByClassName('runeImg');
-        //         var classRef = this;
-        //         //el.addEventListener('click', function(){
-        //             //classRef.navCtrl.push(RuneStoneInfoPage, references); 
-        //           //  alert("hejsan");
-        //         //});
-        //     });
-        // }
-        
-        
-        
-        
-        
-        
         
         const location = new google.maps.LatLng(58.9219444, 17.448888888888888);
         var marker, i;
@@ -190,7 +99,7 @@ export class GoogleMapsPage {
         var infowindow = new google.maps.InfoWindow();
         var classRef = this;
 
-        for (i = 0; i < locations.length; i++) {  
+        for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
