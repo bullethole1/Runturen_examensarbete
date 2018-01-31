@@ -11,11 +11,14 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps';
 import { RuneStoneInfoPage } from '../pages/rune-stone-info/rune-stone-info';
-import { StorePage } from '../pages/store/store';
-import { PayPage } from '../pages/pay/pay';
 
+import { CartPage } from '../pages/cart/cart';
+import { CategoriesPage } from '../pages/categories/categories';
+import { CheckoutPage } from '../pages/checkout/checkout';
+import { ItemPage } from '../pages/item/item';
+import { OrderCompleteModalPage } from '../pages/order-complete-modal/order-complete-modal';
+import { ProductsPage } from '../pages/products/products';
 
-import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FlickrProvider } from '../providers/flickr/flickr';
@@ -30,8 +33,12 @@ import { FlickrProvider } from '../providers/flickr/flickr';
     TabsPage,
     GoogleMapsPage,
     RuneStoneInfoPage,
-    StorePage,
-    PayPage
+    CartPage,
+    CategoriesPage,
+    CheckoutPage,
+    ItemPage,
+    OrderCompleteModalPage,
+    ProductsPage
   ],
   imports: [
     BrowserModule,
@@ -48,14 +55,17 @@ import { FlickrProvider } from '../providers/flickr/flickr';
     TabsPage,
     GoogleMapsPage,
     RuneStoneInfoPage,
-    StorePage,
-    PayPage
+    CartPage,
+    CategoriesPage,
+    CheckoutPage,
+    ItemPage,
+    OrderCompleteModalPage,
+    ProductsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Geolocation,
     FlickrProvider
   ]
 })
