@@ -22,6 +22,10 @@ import { ProductsPage } from '../pages/products/products';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FlickrProvider } from '../providers/flickr/flickr';
+import { BraintreeProvider } from '../providers/braintree/braintree';
+import { ConfigurationService } from '../providers/configuration-service';
+import { IonicStorageModule } from '@ionic/storage'
+
 
 @NgModule({
   declarations: [
@@ -43,7 +47,9 @@ import { FlickrProvider } from '../providers/flickr/flickr';
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -66,7 +72,7 @@ import { FlickrProvider } from '../providers/flickr/flickr';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FlickrProvider
+    FlickrProvider, BraintreeProvider, ConfigurationService
   ]
 })
 export class AppModule {}
