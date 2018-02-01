@@ -12,6 +12,7 @@ export class FlickrProvider {
     console.log('Hello FlickrProvider Provider');
   }
 
+  //function to return the api information
   getPosts()
   {
     return this.http.get(this.getApiUrl)

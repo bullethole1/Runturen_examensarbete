@@ -11,6 +11,7 @@ declare var google: any;
 })
 export class GoogleMapsPage {
    
+    //reference to the html div
     @ViewChild('map') mapRef: ElementRef;
 
     map: any;

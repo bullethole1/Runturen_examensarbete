@@ -17,6 +17,7 @@ export class GalleryPage {
     console.log("Getting posts");
   }
 
+  // Here we subscribe to flickr provider and store the data in photo variable
   getPosts() {
     this.flickrProvider.getPosts().subscribe((data)=>{
       this.photo = data;

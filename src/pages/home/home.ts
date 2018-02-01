@@ -18,6 +18,7 @@ export class HomePage {
     this.showMap();
   }
 
+  //Function to navigate to various pages
   showMap()
   {
     var classRef = this;

@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 
 import { GalleryPage } from '../pages/gallery/gallery';
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps';
@@ -32,7 +31,6 @@ import { IonicStorageModule } from '@ionic/storage'
     GalleryPage,
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
     TabsPage,
     GoogleMapsPage,
@@ -56,7 +54,6 @@ import { IonicStorageModule } from '@ionic/storage'
     MyApp,
     GalleryPage,
     AboutPage,
-    ContactPage,
     HomePage,
     TabsPage,
     GoogleMapsPage,
