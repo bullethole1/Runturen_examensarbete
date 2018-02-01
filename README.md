@@ -1,8 +1,8 @@
 # Runturen_examensarbete
 
 Description.
-Runturen is an educational mobile and webb application for viewing information about rune stones that utilizes google maps,Ionic framework version 3.19, Angular 4, jquery version 3.2.1, typescript version 2.4.2 and Flickr Api as well as Marketcloud for the backend.
-Open the app and find google markers to tap on and to get information regarding the runestone in question or choose the gallery to just look at all the photos or chosse the store to order t-shirts.
+Runturen is an educational mobile and webb application for viewing information about rune stones that utilizes google maps,Ionic framework version 3.19, Angular version 5.0.3, jquery version 3.2.1, typescript version 2.4.2 and Flickr Api as well as Marketcloud for the backend.
+Open the app and find google markers to tap on and to get information regarding the runestone in question or choose the gallery to just look at all the photos or chose the store to order t-shirts.
 
 Installation.
 1. Follow the guide to install ionic on your computer: https://ionicframework.com/getting-started/
