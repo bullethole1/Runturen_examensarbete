@@ -19,12 +19,11 @@ export class GoogleMapsPage {
     }
 
     ionViewDidLoad(){
-        //console.log(this.mapRef);
         this.showMap();
     }
 
     showMap(){
-        //Location lat long
+        //Array of photos to speed up the process of loading them in the application insted of using flickr api
         var locations = [
             ['Fredriksdal', 58.9644444, 17.4625, "Gnue lät resa denna sten efter Gudlev, sin boder. Han ändades i öster i Tingalidet.",[
                 "https://c1.staticflickr.com/5/4451/37742688396_843c2d50a1_k.jpg",
@@ -88,7 +87,7 @@ export class GoogleMapsPage {
             ]]
           ];
 
-        
+        //Set up the map with an initial marker in focus
         const location = new google.maps.LatLng(58.9219444, 17.448888888888888);
         var marker, i;
             var options = {
@@ -99,12 +98,14 @@ export class GoogleMapsPage {
         var infowindow = new google.maps.InfoWindow();
         var classRef = this;
 
+        //loop through the photos array adding lat long
         for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map
         });
 
+        //adding markers with images
         google.maps.event.addListener(marker, 'click', (
             function(marker, i) {return function() {
             infowindow.setContent("<div class='runeTitle'>" + locations[i][0] + "</div>" + "<img src='" + locations[i][4][0] + "' id='rune" + i + "'>");
