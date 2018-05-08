@@ -18,9 +18,8 @@
 
 .ion-page .header .toolbar
 {
-    //display : none;
-    height: 70px;
-    background-color: black;    
+    height: 65px;
+    background-color: black; 
 }
 
 .ion-page .tabs .tabbar
@@ -28,7 +27,6 @@
     display : none;
 }
 
-// .show-page .content-md
-// {
-//     background: #3bafa9 !important;
-// }
+.toolbar-background {
+    background-color: #3bafa9;
+}

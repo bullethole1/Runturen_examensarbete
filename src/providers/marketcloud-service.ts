@@ -3,7 +3,7 @@ import 'rxjs/add/operator/map';
 
 declare var Marketcloud: any;
 
-import '../../node_modules/marketcloud-js/dist/marketcloud.min';
+//import '../../node_modules/marketcloud-js/dist/marketcloud.min';
 
 /*
   Generated class for the MarketcloudService provider.
@@ -24,13 +24,13 @@ export class MarketcloudService {
     // Since this Service is created once
     // we will not have to re-create other instances of the client.
 
-    this.client = new Marketcloud.Client({
+    /* this.client = new Marketcloud.Client({
       publicKey : '8b036357-f3d3-4d20-8c08-c90c4d31be61'// REPLACE WITH YOUR PUBLIC KEY
-    });
+    }); */
     // test key f84af487-a315-42e6-a57a-d79296bd9d99
     //8b036357-f3d3-4d20-8c08-c90c4d31be61 my public key
 
-    this.utils = Marketcloud.Utils;
+    //this.utils = Marketcloud.Utils;
 
   }
 
