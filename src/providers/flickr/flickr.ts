@@ -6,7 +6,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class FlickrProvider {
-  getApiUrl : string = "https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=554863d13e40cf56f98818113f4a05bc&user_id=152375700%40N05&format=json&nojsoncallback=1";    
+  getApiUrl : string = "https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=896a5b5aa057ad4a4d452f32d5b84312&user_id=152375700%40N05&format=json&nojsoncallback=1";    
   
   constructor(public http: Http) {
     console.log('Hello FlickrProvider Provider');

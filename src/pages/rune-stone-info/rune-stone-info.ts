@@ -22,17 +22,9 @@ export class RuneStoneInfoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    this.infoPage();
     this.jsFunctions();
   }
 
-  //retrieves the correct image and text for the particular stone.
-  infoPage() {
-    let imgRef = this.navParams.get("img");
-    console.log(imgRef);
-    let textRef = this.navParams.get("text");
-  }
-  
   //function to display the text slowly
   jsFunctions()
   {

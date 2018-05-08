@@ -14,12 +14,18 @@
 <ion-content padding>
   <h1 id="headId">{{this.navParams.get('name')}}</h1>
   <div class="controlText">
-    Visa information
+    Visa översättning
   </div>
   <div class="textSection" style="display:none;">
       {{this.navParams.get('text')}}
       </div>
-    <div class="imgSection" *ngFor="let Image of this.navParams.get('img')">
-      <img src="{{Image}}">
+    <div class="imgSection" *ngFor="let image of this.navParams.get('img')">
+      <img src="{{image}}">
+    </div>
+    <h3>Spela översättning på svenska och fornnordiska</h3>
+    <div *ngFor="let audio of this.navParams.get('audio')">
+      <audio controls>
+        <source src="{{audio}}" type="audio/wav">
+      </audio>
     </div>
 </ion-content>
