@@ -120,7 +120,7 @@ export class GoogleMapsPage {
         //adding markers with images
         google.maps.event.addListener(marker, 'click', (
             function(marker, i) {return function() {
-            infowindow.setContent("<div class='runeTitle'>" + locations[i][0] + "</div>" + "<img src='" + locations[i][5][0] + "' id='rune" + i + "'>");
+            infowindow.setContent("<div class='runeTitle'>" + locations[i][0] + "</div>"  + "<div>Läs mer</div> <img src='" + locations[i][5][0] + "' id='rune" + i + "'>");
             infowindow.open(map, marker);
 
             var references = {
