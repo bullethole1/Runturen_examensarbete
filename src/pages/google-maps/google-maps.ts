@@ -181,9 +181,9 @@ export class GoogleMapsPage {
       ],
       [
         "Ytterstene",
-        58.9161111,
-        17.549463699999933,
-        "Faste och Ospak(?) lät resa stenen efter Sigvat, sin broder.",
+        58.916297,
+        17.492098,
+        "Faste och Ospak läto resa stenar efter Sigvat sin broder",
         [
           "assets/audio/fornnordiska/Nr9 Ytterstene(fo).m4a",
           " assets/audio/svenska/Nr9 Ytterstene(sv).m4a"
