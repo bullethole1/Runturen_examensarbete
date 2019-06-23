@@ -42,7 +42,8 @@ export class GoogleMapsPage {
           "https://c1.staticflickr.com/5/4493/37742696476_8d6efe2f6c_k.jpg",
           "https://c1.staticflickr.com/5/4457/37533098380_1bb128a72d_k.jpg",
           "https://c1.staticflickr.com/5/4448/37533099410_ec3cf5365a_k.jpg"
-        ]
+        ],
+        "Privat område: Besök kan ske först efter lov från ägaren"
       ],
       [
         "Kristinedal",
@@ -182,7 +183,8 @@ export class GoogleMapsPage {
           "https://c1.staticflickr.com/5/4471/37791300561_25991e65c0_k.jpg",
           "https://c1.staticflickr.com/5/4490/37791301061_dcb3d337f8_k.jpg",
           "https://c1.staticflickr.com/5/4454/37791300931_b7ca920d2c_k.jpg"
-        ]
+        ],
+        "Privat område: Besök kan ske först efter lov från ägaren"
       ],
       [
         "Ytterstene",
@@ -228,7 +230,7 @@ export class GoogleMapsPage {
               "<div class='runeTitle'>" +
                 locations[i][0] +
                 "</div>" +
-                "<div>Läs mer</div> <img src='" +
+                "<div>Klicka på bilden för att läsa mer</div> <img src='" +
                 locations[i][5][0] +
                 "' id='rune" +
                 i +
@@ -241,7 +243,8 @@ export class GoogleMapsPage {
               name: locations[i][0],
               img: locations[i][5],
               text: locations[i][3],
-              audio: locations[i][4]
+              audio: locations[i][4],
+              private: locations[i][6]
             };
 
             $(document).ready(function() {

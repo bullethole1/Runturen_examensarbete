@@ -14,20 +14,23 @@
 
 </ion-header>
 <ion-content padding>
-  <h1 id="headId">{{this.navParams.get('name')}}</h1>
+  <div class="headers">
+    <h1>{{this.navParams.get('name')}}</h1>
+    <div id='private'>{{this.navParams.get('private')}}</div>
+  </div>
   <div class="controlText">
     Visa översättning
   </div>
   <div class="textSection" style="display:none;">
-      {{this.navParams.get('text')}}
-      </div>
-    <div class="imgSection" *ngFor="let image of this.navParams.get('img')">
-      <img src="{{image}}">
-    </div>
-    <h3>Spela översättning på svenska och fornnordiska</h3>
-    <div *ngFor="let audio of this.navParams.get('audio')">
-      <audio controls>
-        <source src="{{audio}}" type="audio/wav">
-      </audio>
-    </div>
+    {{this.navParams.get('text')}}
+  </div>
+  <div class="imgSection" *ngFor="let image of this.navParams.get('img')">
+    <img src="{{image}}">
+  </div>
+  <h3>Spela översättning på svenska och fornnordiska</h3>
+  <div *ngFor="let audio of this.navParams.get('audio')">
+    <audio controls>
+      <source src="{{audio}}" type="audio/wav">
+    </audio>
+  </div>
 </ion-content>
