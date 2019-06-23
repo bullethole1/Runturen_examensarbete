@@ -20,6 +20,11 @@ export class GoogleMapsPage {
     this.showMap();
   }
 
+  ionViewWillEnter() {
+    console.log("View will enter");
+    this.showMap();
+  }
+
   showMap() {
     //Array of photos to speed up the process of loading them in the application insted of using flickr api
     var locations = [
@@ -229,6 +234,7 @@ export class GoogleMapsPage {
                 i +
                 "'>"
             );
+
             infowindow.open(map, marker);
 
             var references = {
@@ -238,10 +244,11 @@ export class GoogleMapsPage {
               audio: locations[i][4]
             };
 
-            var currId = document.getElementById("rune" + i);
-            console.log(currId);
-            currId.addEventListener("click", function() {
-              classRef.navCtrl.push(RuneStoneInfoPage, references);
+            $(document).ready(function() {
+              var currId = document.getElementById("rune" + i);
+              currId.addEventListener("click", function() {
+                classRef.navCtrl.push(RuneStoneInfoPage, references);
+              });
             });
           };
         })(marker, i)
@@ -249,7 +256,7 @@ export class GoogleMapsPage {
     }
   }
 
-  addMarker(position, map) {
+  addMarker(position: any, map: any) {
     return new google.maps.Marker({
       position,
       map
