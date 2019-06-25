@@ -199,6 +199,54 @@ export class GoogleMapsPage {
           "https://c1.staticflickr.com/5/4492/37121261153_198456e8cc_k.jpg",
           "https://c1.staticflickr.com/5/4474/37533080240_0b5922e5b2_k.jpg"
         ]
+      ],
+      [
+        "Sör-husby",
+        58.94528,
+        17.505496,
+        "översättning",
+        [
+          "assets/audio/fornnordiska/Nr10 Sîr-Husby(fo).m4a",
+          "assets/audio/svenska/Nr10 Sîr-Husby(sv).m4a"
+        ],
+        [
+          "https://c1.staticflickr.com/5/4457/23938393178_9a311d16a4.jpg",
+          "https://c1.staticflickr.com/5/4452/37533095060_0001211ea2.jpg"
+        ],
+        "Privat område: Besök kan ske först efter lov från ägaren"
+      ],
+      [
+        "Trostorp v",
+        58.933627,
+        17.524655,
+        "översättning",
+        [
+          "assets/audio/fornnordiska/Nr14 Trostorp(fo).m4a",
+          "assets/audio/svenska/Nr15 Trostorp(sv).m4a"
+        ],
+        ["https://c1.staticflickr.com/5/4472/37121240723_82f188446c.jpg"]
+      ],
+      [
+        "Trostorp h",
+        58.933734,
+        17.524481,
+        "översättning",
+        [
+          "assets/audio/fornnordiska/Nr16 Trostorp h(fo).m4a",
+          "assets/audio/svenska/Nr16 Trostorp h(sv).m4a"
+        ],
+        ["https://c1.staticflickr.com/5/4499/37081801544_ec41115f27.jpg"]
+      ],
+      [
+        "Trostorp sten",
+        58.933457,
+        17.524467,
+        "översättning",
+        [
+          "assets/audio/svenska/Nr14 Trostorp sten(fo).m4a",
+          "assets/audio/svenska/Nr14 Trostorp sten(sv).m4a"
+        ],
+        ["https://c1.staticflickr.com/5/4504/37791265681_d4f192e30c.jpg"]
       ]
     ];
 
