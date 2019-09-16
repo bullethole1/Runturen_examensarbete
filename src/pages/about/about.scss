@@ -1,11 +1,36 @@
-page-about {
+page-about {}
 
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 5px 10px 5px;
+  border: 0.5px solid #b5acac;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.87);
 }
-.contact
-{
-    font-family: 'Open Sans', sans-serif;
-    margin: 10px 5px 10px 5px;
-    border: 0.5px solid #b5acac;
-    padding: 3px;
-    background: rgba(255, 255, 255, 0.87);
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div1,
+.div2 {
+  margin-bottom: 10px;
+}
+
+.div1 {
+  margin-top: 10px;
+  width: 100%;
+  height: 123px;
+}
+
+.div2 {
+  padding: 16px;
+  line-height: 10px;
+  margin-top: 20px;
+  width: 100%;
+  height: 123px;
 }
