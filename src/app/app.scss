@@ -15,18 +15,24 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
-.ion-page .header .toolbar
-{
-    height: 65px;
-    background-color: black; 
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.ion-page .tabs .tabbar
-{
-    display : none;
+.back-button {
+  color: black;
+}
+
+.ion-page .header .toolbar {
+  height: 65px;
+  background-color: black;
+}
+
+.ion-page .tabs .tabbar {
+  display: none;
 }
 
 .toolbar-background {
-    background-color: #3bafa9;
+  background-color: #3bafa9;
 }
