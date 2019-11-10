@@ -14,7 +14,7 @@ export class GoogleMapsPage {
 
   map: any;
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController) { }
 
   ionViewDidLoad() {
     this.showMap();
@@ -204,7 +204,7 @@ export class GoogleMapsPage {
         "Sör-husby",
         58.94528,
         17.505496,
-        "översättning",
+        "Gunna och Tove och …, sin broder. Gud hjälpe.",
         [
           "assets/audio/fornnordiska/Nr10 Sîr-Husby(fo).m4a",
           "assets/audio/svenska/Nr10 Sîr-Husby(sv).m4a"
@@ -219,7 +219,7 @@ export class GoogleMapsPage {
         "Trostorp v",
         58.933627,
         17.524655,
-        "översättning",
+        "Arnulv och Gammal och Spjute de lät hugga hällen efter Rogvat, sin gode fader.",
         [
           "assets/audio/fornnordiska/Nr14 Trostorp(fo).m4a",
           "assets/audio/svenska/Nr15 Trostorp(sv).m4a"
@@ -230,7 +230,7 @@ export class GoogleMapsPage {
         "Trostorp h",
         58.933734,
         17.524481,
-        "översättning",
+        "Härmod lät hugga efter Bergvid, sin broder. Han drunknade i Livland.",
         [
           "assets/audio/fornnordiska/Nr16 Trostorp h(fo).m4a",
           "assets/audio/svenska/Nr16 Trostorp h(sv).m4a"
@@ -241,7 +241,7 @@ export class GoogleMapsPage {
         "Trostorp sten",
         58.933457,
         17.524467,
-        "översättning",
+        "Torger och Orre, de reste stenar efter Olev, sin fader och efter Sven, sin broder.",
         [
           "assets/audio/svenska/Nr14 Trostorp sten(fo).m4a",
           "assets/audio/svenska/Nr14 Trostorp sten(sv).m4a"
@@ -272,17 +272,17 @@ export class GoogleMapsPage {
       google.maps.event.addListener(
         marker,
         "click",
-        (function(marker, i) {
-          return function() {
+        (function (marker, i) {
+          return function () {
             infowindow.setContent(
               "<div class='runeTitle'>" +
-                locations[i][0] +
-                "</div>" +
-                "<div>Klicka på bilden för att läsa mer</div> <img src='" +
-                locations[i][5][0] +
-                "' id='rune" +
-                i +
-                "'>"
+              locations[i][0] +
+              "</div>" +
+              "<div>Klicka på bilden för att läsa mer</div> <img src='" +
+              locations[i][5][0] +
+              "' id='rune" +
+              i +
+              "'>"
             );
 
             infowindow.open(map, marker);
@@ -295,9 +295,9 @@ export class GoogleMapsPage {
               private: locations[i][6]
             };
 
-            $(document).ready(function() {
+            $(document).ready(function () {
               var currId = document.getElementById("rune" + i);
-              currId.addEventListener("click", function() {
+              currId.addEventListener("click", function () {
                 classRef.navCtrl.push(RuneStoneInfoPage, references);
               });
             });
