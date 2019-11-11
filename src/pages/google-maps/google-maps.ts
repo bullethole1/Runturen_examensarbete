@@ -243,7 +243,7 @@ export class GoogleMapsPage {
         17.524467,
         "Torger och Orre, de reste stenar efter Olev, sin fader och efter Sven, sin broder.",
         [
-          "assets/audio/svenska/Nr14 Trostorp sten(fo).m4a",
+          "/assets/audio/fornnordiska/Nr14 Trostorp sten(fo).m4a",
           "assets/audio/svenska/Nr14 Trostorp sten(sv).m4a"
         ],
         ["https://c1.staticflickr.com/5/4504/37791265681_d4f192e30c.jpg"]
