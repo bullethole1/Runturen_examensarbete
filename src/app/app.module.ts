@@ -11,18 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps';
 import { RuneStoneInfoPage } from '../pages/rune-stone-info/rune-stone-info';
 
-import { CartPage } from '../pages/cart/cart';
-import { CategoriesPage } from '../pages/categories/categories';
-import { CheckoutPage } from '../pages/checkout/checkout';
-import { ItemPage } from '../pages/item/item';
-import { OrderCompleteModalPage } from '../pages/order-complete-modal/order-complete-modal';
-import { ProductsPage } from '../pages/products/products';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FlickrProvider } from '../providers/flickr/flickr';
-import { BraintreeProvider } from '../providers/braintree/braintree';
-import { ConfigurationService } from '../providers/configuration-service';
 import { IonicStorageModule } from '@ionic/storage'
 
 
@@ -35,12 +26,6 @@ import { IonicStorageModule } from '@ionic/storage'
     TabsPage,
     GoogleMapsPage,
     RuneStoneInfoPage,
-    CartPage,
-    CategoriesPage,
-    CheckoutPage,
-    ItemPage,
-    OrderCompleteModalPage,
-    ProductsPage
   ],
   imports: [
     BrowserModule,
@@ -58,18 +43,12 @@ import { IonicStorageModule } from '@ionic/storage'
     TabsPage,
     GoogleMapsPage,
     RuneStoneInfoPage,
-    CartPage,
-    CategoriesPage,
-    CheckoutPage,
-    ItemPage,
-    OrderCompleteModalPage,
-    ProductsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    FlickrProvider, BraintreeProvider, ConfigurationService
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    FlickrProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }

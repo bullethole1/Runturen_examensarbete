@@ -3,14 +3,13 @@ import { NavController } from "ionic-angular";
 import { AboutPage } from "../about/about";
 import { GalleryPage } from "../gallery/gallery";
 import { GoogleMapsPage } from "../google-maps/google-maps";
-import { ProductsPage } from "../products/products";
 
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
 })
 export class HomePage {
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) { }
 
   ionViewDidLoad() {
     //console.log(this.mapRef);
@@ -20,17 +19,14 @@ export class HomePage {
   //Function to navigate to various pages
   showMap() {
     var classRef = this;
-    $(".aboutRef").click(function() {
+    $(".aboutRef").click(function () {
       classRef.navCtrl.push(AboutPage);
     });
-    $(".galleryRef").click(function() {
+    $(".galleryRef").click(function () {
       classRef.navCtrl.push(GalleryPage);
     });
-    $(".mapRef").click(function() {
+    $(".mapRef").click(function () {
       classRef.navCtrl.push(GoogleMapsPage);
-    });
-    $(".storeRef").click(function() {
-      classRef.navCtrl.push(ProductsPage);
     });
   }
 }
